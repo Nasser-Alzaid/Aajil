@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores and analyzes purchase order data using Python, pandas, and machine learning techniques. The goal is to clean the data, discover patterns, and build predictive models to gain business insights.
+This project explores and analyzes purchase order data using Python, pandas, and machine learning techniques. The goal is to clean the data, discover patterns, group and cluster purchase orders, and build predictive models to gain business insights.
 
 ---
 
@@ -29,11 +29,13 @@ This project explores and analyzes purchase order data using Python, pandas, and
 - Visualized correlations between features using heatmaps.
 - Identified relationships and patterns in the data.
 
-### 5. **Clustering Approach**
+### 5. **Clustering and Grouping**
 
-- Used K-Means clustering to group purchase order items based on `Quantity` and `Total Bcy`.
-- Scaled features for better clustering performance.
-- Visualized clusters with scatter plots to interpret groupings.
+- **Clustering by Purchase Order:**  
+  Used K-Means clustering to group purchase orders based on total `Quantity` and `Total Bcy` per order.  
+  Visualized clusters with scatter plots to interpret groupings.
+- **Grouping by Product:**  
+  Grouped all `Item ID` and `Purchase Order ID` values for each unique `Product ID` into lists, allowing analysis of which items and orders are associated with each product.
 
 ### 6. **Machine Learning Model (Regression Example)**
 
@@ -59,7 +61,7 @@ This project explores and analyzes purchase order data using Python, pandas, and
 ## Key Learnings
 
 - Data cleaning and preprocessing are crucial for reliable analysis.
-- Clustering helps uncover hidden patterns and segments in business data.
+- Clustering and grouping help uncover hidden patterns and segments in business data.
 - Machine learning models can predict important business metrics and support decision-making.
 
 ---
@@ -73,4 +75,4 @@ This project explores and analyzes purchase order data using Python, pandas, and
 
 ## Author
 
-This project was developed as a practical exercise in data analysis and machine learning
+This project was developed as a practical exercise in data analysis and machine learning for purchase order
